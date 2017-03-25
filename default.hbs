@@ -45,7 +45,8 @@
     </div>
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
     {{!-- Fitvids makes video embeds responsive and awesome --}}
@@ -53,8 +54,8 @@
     {{!-- The main JavaScript file for Casper --}}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
-    <script type="text/javascript" src="http://jmblog.github.io/color-themes-for-google-code-prettify/js/prettify.js"></script>
-    <script src="http://google-code-prettify.googlecode.com/svn/trunk/src/lang-go.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
     {{!-- <script type="text/javascript" src="{{asset "js/prettify.js"}}"></script> --}}
     <script type='text/javascript'>
         $(document).ready(function () {
